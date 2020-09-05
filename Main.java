@@ -14,9 +14,10 @@ public class Main {
     b.setBounds(150, 150, 100, 40);// x axis, y axis, width, height
 
       b.addActionListener(new ActionListener(){  
-        //Creates an action listener that activates as soon as the button is clicked
+        int i=0;//Creates an action listener that activates as soon as the button is clicked
         public void actionPerformed(ActionEvent e){  
-            l1.setText("Thank you for clicking the button!"); // set's the label text to thank the user  
+            i ++;
+            l1.setText("You have: "+ i + " cookies!"); // set's the label text to thank the user  
         }
       }); //end of action listener
 
